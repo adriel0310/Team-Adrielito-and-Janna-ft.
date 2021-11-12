@@ -1,0 +1,199 @@
+/* ========== FONTS ========== */
+@font-face {
+    font-family: TruenoLight;
+    src: url("/fonts/TruenoLt.otf");
+}
+
+@font-face {
+    font-family: TruenoSemiBold;
+    src: url("/fonts/TruenoSBd.otf");
+}
+
+@font-face {
+    font-family: TruenoBold;
+    src: url("/fonts/TruenoBd.otf");
+}
+
+/* ========== SEMANTIC TAGS ========== */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* ========== UNIVERSAL TAGS ========== */
+.top, .slogan, .bottom {
+    height: 100vh;
+}
+
+/* ========== TOP DIV ========== */
+.top {
+    background-image: url("/Group 4.png"); 
+    padding: 10%;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.top >* {
+   transform: translateY(100px);
+}
+
+.Title > * {
+    font-family: TruenoBold;
+    font-size: 90px;
+    color: white;
+    text-align: center;
+}
+
+.top > .Slogan1 {
+    font-family: TruenoLight;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+}
+
+.Button {
+    border: 5px solid white;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 28px 56px;
+    font-size: 30px;
+    font-family: TruenoBold;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    transition: all .2s ease-in-out;
+    
+}
+.Button:hover{
+    transform: scale(1.1) translateY(100px); 
+}
+
+/* ========== OPTIMUM PRIDE ========== */
+/* ========== URGH ERGH URGH ========== */
+/* ========== MID DIV ========== */
+.slogan {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.slogan > * {
+    
+}
+
+.slogan > .slogan-top-layer {
+    background-color: rgb(255, 255, 255);
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.slogan > .slogan-bot-layer {
+    background-color: black;
+    background-image: url("/image 1.png");
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.slogan-top-layer > .about-container {
+    display: flex;
+    margin: auto 5rem;
+    border: white solid 2px;
+}
+
+.about-container >* {
+    font-family: TruenoLight;
+    width: 50%;
+    margin: 3rem;
+    border: rgb(255, 255, 255) solid 2px;
+}
+
+.about-container > .about-header {
+    font-family: TruenoLight;
+    font-size: 48px;
+    display: flex;
+    margin: 25px 0 0 50px; 
+    
+}
+
+.about-container > .about-text { 
+    text-align: justify;
+    font-family: TruenoLight;
+    font-size: 22px;
+}
+
+/* ========== BOT DIV ========== */
+.bottom {
+    display:flex;
+    flex-direction: row;
+}
+.bottom > .about-us {
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;-
+}
+.bottom > .about-us > .AtCyberShop {  
+    font-family: TruenoBold;
+    
+    font-size: 60px;
+    /* background-color: yellow; */
+    margin: 0px 150px 0 -18px ;
+}
+
+.bottom > .about-us > .intro {
+    font-family: TruenoLight;
+    margin: -50px 150px 0 -52px ;
+    font-size: 20px;
+    /* background-color: yellow; */
+  
+}
+
+.bottom> .about-us> .intro-pic {
+    margin:73px auto 150px auto ;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.bottom > .Services-Offered {
+    font-family: TruenoBold;
+    font-size: 60px;
+    width:50%;
+    
+     /*background-color: yellow;*/ 
+}
+
+
+/* ========== ULT BOT DIV ========== */
+
+.ultimate-bottom {
+font-size:inherit; /*to be deleted*/
+}
+
+/* ========== RESPONSIVE QUERIES ========== */
+@media all and (max-width: 320px) {    
+    .about-header {
+        font-size: 1em;
+    }
+    
+    .about-text {
+        font-size: 0.5rem;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .bottom {
+        display:flex;
+        flex-direction: column;
+    }
+}
